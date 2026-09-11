@@ -11,12 +11,10 @@
         MouseLeftButtonDown="Window_MouseLeftButtonDown">
 
     <Grid>
-        <Ellipse
-            Width="100"
-            Height="100"
-            Fill="Orange"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top" Margin="0,93,0,0"/>
+        <Image Source="assets/images.png"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        />
     </Grid>
-
+    
 </Window>
