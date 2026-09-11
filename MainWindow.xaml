@@ -6,15 +6,28 @@
         Height="300"
         WindowStyle="None"
         AllowsTransparency="True"
+        Focusable="True"
         Background="Transparent"
         Topmost="True"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        KeyDown="Window_KeyDown">
 
     <Grid>
-        <Image Source="assets/images.png"
+        <Image
+        x:Name="DesktopPetImage"
+        Source="assets/images.png"
         HorizontalAlignment="Center"
-        VerticalAlignment="Center"
-        />
+        VerticalAlignment="Center">
+
+            <Image.RenderTransform>
+            <ScaleTransform
+                    x:Name="DesktopPetScale"
+                    ScaleX="1"
+                    ScaleY="1"/>
+            </Image.RenderTransform>
+
+        </Image>
+        
     </Grid>
     
 </Window>
